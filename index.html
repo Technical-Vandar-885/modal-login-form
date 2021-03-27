@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Login Form</title>
+</head>
+<body>
+    <div class="button">
+        <button onclick="Open()">Login</button>
+    </div>
+    <div class="container" id="container">
+        <div class="close">
+            <img src="close.svg" onclick="Open()" alt="">
+        </div>
+        <h1>Login Here</h1>
+        <form action="" autocomplete="off">
+            <div class="inpSection">
+                <div class="email">
+                    <img src="email.svg" alt="">
+                    <input type="email" name="email" id="email" placeholder="Enter E-mail" required>
+                </div>
+                <div class="password">
+                    <img src="password.svg" alt="">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="forpass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="login">
+                    <button>Login</button>
+                </div>
+                <div class="signup">
+                    Don't Have An Account <a href="#">SignUp</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+<script>
+    function Open()
+    {
+        const box=document.getElementById('container');
+        box.classList.toggle('active');
+    }
+</script>
+</html>
